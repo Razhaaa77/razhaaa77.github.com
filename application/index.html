@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>403 Forbidden</title>
+</head>
+<body>
+
+<p>Directory access is forbidden.</p>
+
+</body>
+</html>
+<div class="carousel-inner">
+	<?php $no=1; foreach($carousel as $rr){?>
+		<div class="carousel-item <?php if($no==1){echo 'active'; }?>">
+			<img src="<?= base_url('assets/flat_able/upload/caraousel/'. $rr['foto'])?>" class="d-block w-100" >
+		</div>
+	<?php $no++; } ?>
+</div>
